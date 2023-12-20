@@ -13,7 +13,6 @@ console.log(emptyArray);
 console.log(myNumbers);
 console.log(colors);
 
-
 // get second value of colors array
 console.log(colors [1]);
 
@@ -26,13 +25,24 @@ console.log(colors);
 colors.unshift('orange');
 console.log(colors);
 
+// giving the last element of an array and remove at the same time 
+console.log('=========last element of  aRRAYS and delete last one at the same time ============');
+console.log(colors.pop());
+console.log(colors);
+
 // loops with Arrays
 console.log('=========FOR LOOP WİTH aRRAYS ============');
 for (let index = 0; index < colors.length; index++) {
     const element = colors[index];
     console.log(element);
 }
-
+// the size of the Arrays
+console.log('=========the size of  aRRAYS ============');
+console.log(colors.length);
+for (let index = 0; index < colors.length; index++) {
+   console.log(colors[index]);
+    
+}
 
 //for of loop
 console.log('=========FOR OF LOOP WİTH aRRAYS ============');
@@ -40,7 +50,7 @@ for (const value of colors) {
     console.log(value);
 }
 
-
+//for each loop
 console.log('=========FOR each  LOOP WİTH aRRAYS ============');
 colors.forEach(element =>{
     console.log(element);
