@@ -57,7 +57,7 @@ colors.forEach(element =>{
 })
 
 // can we add multiple type ofData inside our Array ?  Answer is YES
-let soupOfData = [5 , 'cydeo', true, undefined, colors]
+let soupOfData = [5 , 'cydeo', true, undefined, colors]  // you can put Map, objecti functions, array inside our array it is very flexibale
 soupOfData.forEach(element => {
     console.log(typeof element);
 })
