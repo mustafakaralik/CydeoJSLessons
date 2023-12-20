@@ -1,13 +1,13 @@
 // no access modifier needed, no method overloading 
 
 // create the function 
-function add(a,b) {
-    console.log('Total is : '+ (a+b));
+function add(a,b) {   // parameters of function
+    console.log('Total is : '+ (a+b));  // NO return type functions
 }
 
-
-// use the function -- call the function ?
+// use the function -- call the function ?-- argument we are passing
 add(10,20);
+//------------------------------------------------------------//
 
 //return type functions
 function multiply(a,b) {
@@ -15,17 +15,25 @@ function multiply(a,b) {
 }
 console.log('the result of multiplication is : '+ multiply(10,20));
 
-
+/*
+they call functions as first class citizens of JS 
+you can do with using functions following
+1.you can  pass arguments to other functions
+2. you can return function from a function
+3. you can store a function into a variable
+*/
 let divide = function(a,b){
     return a/b;
 }
 
+// no overloading 
+add(10,20,30,500);  // ignors after the second parametes (we dont have functions which have three parameters)
 
 //renaming the function
-console.log(divide(20,10));
+console.log(divide(30,5));
 
 let anyName = divide;  // since both are an object
-console.log(anyName(20,10));
+console.log(anyName(30,5));  
 
 function avarage(a,b,fn) {
     return fn(a,b)/2;
