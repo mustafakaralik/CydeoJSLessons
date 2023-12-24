@@ -48,7 +48,7 @@ function sum(a,b) {
  console.log(averageOfTotal);
 
  let averageOfMultiply = avarage(10,20, multiply);
- console.log(averageOfMultiply);
+ console.log("average result from multiplication: "+averageOfMultiply);
 
  
 
