@@ -38,14 +38,14 @@ console.log(admin);
 
 let a;
 console.log(typeof a);  // undefined 
-a = 5;  // JS infers taht a is a number
+a = 5;  // JS infers that a is a number
 console.log(typeof a); // number
 
 a="MustafaJSKara";
 console.log(typeof a); // string
 
 a = true;
-console.log(typeof a);
+console.log(typeof a); //boolean
 
 a =null;
 console.log(typeof a);
